@@ -1,7 +1,7 @@
 # Projeto site Global Construtora
 Projeto de um simples site fictício, feito para uma construtora. 
 
-<p aligns="center"> <img src="gifsreadme/animação1.gif" width="893" height="300">  <img src="gifsreadme/animação2.gif" width="220" height="300"> </p>
+<p aligns="center"> <img src="gifsreadme/animação1.gif" width="400" height="300">  <img src="gifsreadme/animação2.gif" width="220" height="300"> </p>
 
 ## Funcionalidades
 
