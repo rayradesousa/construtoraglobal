@@ -1,12 +1,11 @@
 # Projeto site Global Construtora
-Projeto de um simples site fictício, feito para uma construtora. 
+Projeto de um simples site fictício feito para uma construtora. Fiz este projeto para ir mostrando um pouco do que estou aprendendo, nos estudos de programação.
 
-<p aligns="center"> <img src="gifsreadme/animação1.gif" width="400" height="300">  <img src="gifsreadme/animação2.gif" width="220" height="300"> </p>
+<p aligns="center"> <img src="gifsreadme/animação1.gif" width="500" height="400">  <img src="gifsreadme/animação2.gif" width="300" height="400"> </p>
 
 ## Funcionalidades
 
 🗸 Tema mantido na página inteira <br>
-🗸 <br>
 🗸 Menu que leva aos tópicos de cada página<br>
 🗸 Site responsivo<br>
 🗸 Formulário para informações de contato
