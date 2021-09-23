@@ -1,0 +1,623 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+}
+
+body{
+  
+
+
+    overflow-x: hidden;
+    width: 100%;
+    height:100vh;
+    background-color: rgb(229, 231, 231);
+}
+/* Nav menu */
+nav{
+ 
+    background-color:#696969;
+    box-shadow: 10px 15px 40px #000; /* sombreamento */
+    width: 100%;
+    height:18vh; /* o vh é uma unidade de medida responsiva que se adpata a altura de janela do usuário */
+  /* ajuga a quebrar os itens caso a tela seja muito pequena */
+    align-items: center;/*  para centralizar os itens */
+    display:flex; /* vai deixar todo o header flexível */
+    justify-content:space-between; /* vai deixar o menu de um lado e a logo de outro, serve para separar os extremos */
+}
+
+.logo{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 80px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.square {
+    width: 8px;
+    display: inline-block;
+    margin-right: 6px;
+    background-color: #ee2626; 
+}
+
+.nav-lista{
+list-style: none;
+display:flex;
+}
+
+.nav-lista li{
+color:rgb(223, 226, 226);
+letter-spacing: 3px;
+text-decoration: none;
+margin-left: 30px;
+margin-right: 20px;
+font-size: 22px;
+}
+
+
+.mobile-menu{
+  display:none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+ width: 30px;
+ height: 2px;
+ background: #fff;
+ margin:8px;
+ transition: 0.3s;
+}
+
+@media (max-width:999px){
+    body{
+        overflow-x:hidden; /* se algo vai ficar fora do body esta propeidade esconde e não mostra o que esta fora */
+    }
+    .nav-lista{
+    position: absolute;
+        top:18vh;
+        right:0;
+        width: 50vh;
+        height: 100vh;
+        background:#696969;
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-around;
+      transform: translateX(100%);
+      transition:transform 0.3s ease-in;
+    }
+    .nav-lista li{
+        margin-left: 0;
+    
+    }
+    .mobile-menu{
+        display:block;
+    }
+}
+
+.nav-lista.active{
+   transform:translateX(0);
+}
+
+
+a:hover{ 
+    background-color:rgba(8, 8, 8, 0.37);
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+@keyframes naveLinkFade{
+  from {
+       opacity: 0;
+       transform: translateX(50px);
+   }
+   to{
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /* Main da página inicial */
+
+  main{
+display:flex;
+width: 100%;
+ background: url("/capa.jpg") no-repeat center center;
+ height: 100%;
+
+}
+ 
+.titulo{
+ font-size: 30px;
+text-align:center;
+ width: 100%;
+ height: 100%;
+color:#fff;
+margin-top:25% ;
+}
+
+.p1{
+    font-size: 30px;
+}
+
+/* Parte do Sobre nós */
+
+.titulo2{
+
+  height:10vh;
+ margin-top: 100px;
+  margin-bottom: 30px;
+  padding:10px;
+   text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: black;
+}
+
+.hrtitulo{
+ text-align: center;
+ margin: auto;
+ width: 50px;
+ border: solid 2px;
+ color: #fa0808;
+}
+
+
+
+/* Style the Image Used to Trigger the Modal */
+.myImg{
+ 
+  cursor: pointer;
+  transition: 0.3s;
+  width: 40%;
+  height: 55vh;
+margin-top:10px ;
+margin-left:7%;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+
+
+
+.sobre-nos{
+  width: 100%;
+  margin:auto;
+  height: 70vh;
+  background-color: #696969;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+.box-menu-sobre-nos {
+    text-align: right;
+    background-color:#9b9898;
+}
+
+    .menu-sobre-nos {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        display: inline-block;
+        padding:10px 40px 0 8px;
+        height: 60px;
+        line-height: 40px;
+    
+    }
+
+
+#texto-menu-sobre-nos {
+   
+    width: 50%;
+    text-align:left;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 51%;
+    margin-top:-270px ;
+    
+}
+
+/* parte Nossos serviços */
+
+.serviços{
+    margin: center;
+    width: 60%;
+    background-color: rgb(180, 176, 180);
+    color: rgb(255, 255, 255);
+
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container{
+   position: relative;
+    width: 100%;
+ background-color: #696969;
+  }
+  
+  /* Hide the images by default */
+  .Slides{
+    display: none;
+  }
+
+ .imageserviços{
+   display:flex;
+   margin:auto;
+   padding:10px;
+height:400px;
+width: 90%;
+}
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 8px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 20px;
+
+  }
+  
+  /* Number text (1/3 etc) */
+  .numerotexto{
+    color: #f2f2f2;
+    padding: 8px 18px;
+    top:0px;
+
+  }
+  
+  /* Container for image text */
+  .principal-container{
+   text-align: center;
+    background-color: #222;
+    padding:30px ;
+    color: white;
+    margin-top:-9px;
+    font-size:40px;
+
+}
+#principal{
+  font-size: 25px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .coluna {
+    float: left;
+    width: 16.66%;
+  
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .images {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .images:hover {
+    opacity: 1;
+  }
+
+ /* Nossos projetos  */
+
+ .container-projetos{ 
+
+    width: 90%;
+    margin:auto;
+    background-color: #696969;
+ 
+ }
+
+ .row > .column {
+    padding: 0 8px;
+  }
+
+#principio{
+  font-size:30px;
+}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .imgpart1{
+    width: 100%;
+    height:30vh;
+   padding:0px 0px 10px 0px;
+   cursor: pointer;
+   margin-top: 10px;
+  }
+  
+  
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+ 
+  }
+  
+  /* The Modal (background) */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left:0 ;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-container {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+     max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .primeiro-Slides{
+    display: none;
+  
+  }
+
+  .img2{
+    height: 85vh;
+    width:100%;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numero-texto {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .principio-container {
+    text-align: center;
+    font-size: 40px;
+    margin-top: -4px;
+    background-color: rgb(0, 0, 0);
+    padding: 2px 26px 5px 0px;
+    color: white;
+    
+  }
+  
+  img.demo {
+    opacity: 0.8;
+  }
+
+  .demo{
+    width: 100%;
+    height: 20vh;
+    padding: 2px;
+    cursor: pointer;
+   
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 2;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+
+/*   Formulário */
+
+
+.formulario{
+
+  width:40%;
+  margin: auto;
+  margin-top: 10px;
+
+}
+
+input{
+  height: 50px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: rgb(36, 35, 35);
+  padding: 5px; 
+  margin-bottom: 6px;
+  
+}
+
+input[type="submit"] {
+  font-weight: 700;
+  background-color: #696969;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  cursor: pointer;
+  
+}
+
+textarea {
+  height: 150px;
+  width: 100%;
+  font-size: 20px;
+  resize: none;
+  padding:5px;
+}
+
+
+/* Footer */
+
+.container-footer{
+column-count: 1;
+
+}
+
+footer{
+  background-color:#696969;
+  padding-top: 30px;
+  text-align: center;
+  overflow-wrap: break-word;
+  text-align: left;
+  padding-right: 8px;
+  margin-bottom: 12px;
+}
+
+
+p {
+  margin-right: 20px;
+  color: #FFF;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.footer-titulo{
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+.imgfooter{
+  width: 20px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.copyright {
+  height: 44px;
+  line-height: 44px;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 0;
+}
+

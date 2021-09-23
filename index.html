@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="#Global"> <span class="square">&nbsp;</span>Global Construtora</a>
+            <div class="mobile-menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            <ul class="nav-lista">
+
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulo">
+            <h1> Olá, nós somos a Global Construtora!</h1>
+            <p class="p1">Seu projeto em boas mãos, estamos a mais de 50 anos no mercado!</p>
+        </div>
+    </main>
+
+
+    <!-- Início Sobre nós -->
+    <section class="secsobre">
+
+        <div>
+            <h2 class="titulo2">Sobre <a name="Sobre"></a>
+                <hr class="hrtitulo">
+            </h2>
+
+        </div>
+
+        <div class="sobre-nos">
+
+            <div class="box-menu-sobre-nos">
+                <div class="menu-sobre-nos">Missão</div>
+                <div class="menu-sobre-nos">Visão</div>
+                <div class="menu-sobre-nos">Valores</div>
+            </div>
+            >
+            <img class="myImg" src="/imagens/nossaequipe.jpg" alt="equipe">
+
+
+            <div id="texto-menu-sobre-nos">
+                "Temos como misssão, fazer projetos inovadores, pensando no meio ambiente, utilizando os melhores
+                materiais de forma consciente."
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section>
+
+        <div>
+            <h2 class="titulo2">Nossos Serviços<a name="Serviços"></a>
+                <hr class="hrtitulo">
+            </h2>
+        </div>
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="Slides">
+                <div class="numerotexto">1 / 9</div>
+                <img class="imageserviços" src="/imagens/gerenciamentodeobra].jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">2 / 9</div>
+                <img class="imageserviços" src="/imagens/instalaçoes.jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">3 / 9</div>
+                <img class="imageserviços" src="/imagens/levantamentotopografico.jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">4 / 9</div>
+                <img class="imageserviços" src="/imagens/obrascomerciais.jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">5 / 9</div>
+                <img class="imageserviços" src="/imagens/obrasindustriais.jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">6 / 9</div>
+                <img class="imageserviços" src="/imagens/pisodeconcreto.jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">7 / 9</div>
+                <img class="imageserviços" src="/imagens/projetodeengenharia.jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">8 / 9</div>
+                <img class="imageserviços" src="/imagens/recuperaçaodeestrutura.jpg">
+            </div>
+
+            <div class="Slides">
+                <div class="numerotexto">9 / 9</div>
+                <img class="imageserviços" src="/imagens/restauraçaodepatrimonio.jpg">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="grandeSlides(-1)">&#10094;</a>
+            <a class="next" onclick="grandeSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="principal-container">
+                <p id="principal"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/gerenciamentodeobra].jpg" style="width:100%"
+                        onclick="pequenosSlide(1)" alt="Gerenciamento de Obra">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/instalaçoes.jpg" style="width:100%"
+                        onclick="pequenosSlide(2)" alt="Instalações de todos os tipos">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/levantamentotopografico.jpg" style="width:100%"
+                        onclick="pequenosSlide(3)" alt="Levantamento Topográfico">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/obrascomerciais.jpg" style="width:100%"
+                        onclick="pequenosSlide(4)" alt="Obras Comerciais">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/obrasindustriais.jpg" style="width:100%"
+                        onclick="pequenosSlide(5)" alt="Obras Industriais">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/pisodeconcreto.jpg" style="width:100%"
+                        onclick="pequenosSlide(6)" alt="Piso de Concreto">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/projetodeengenharia.jpg" style="width:100%"
+                        onclick="pequenosSlide(7)" alt="Projeto de Engenharia">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/recuperaçaodeestrutura.jpg" style="width:100%"
+                        onclick="pequenosSlide(8)" alt="Recuperação de Estrutura">
+                </div>
+                <div class="coluna">
+                    <img class="images cursor" src="/imagens/restauraçaodepatrimonio.jpg" style="width:100%"
+                        onclick="pequenosSlide(9)" alt="Restauração de Patrimônio">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+
+        <div>
+            <h2 class="titulo2">Nossos Projetos<a name="Projetos"></a>
+                <hr class="hrtitulo">
+            </h2>
+        </div>
+
+        <div class="container-projetos">
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/biblioteca.jpg" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/centrocomercial2.jpg" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/edificiocomercial1.jpg" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/edifico2.jpg" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/Elevadores.jpg" onclick="openModal();currentSlide(5)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/hotel.jpg" onclick="openModal();currentSlide(6)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/isona.jpg" onclick="openModal();currentSlide(7)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/teatro.jpg" onclick="openModal();currentSlide(8)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/condominiodecasas.jpg" onclick="openModal();currentSlide(9)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/hotel1.jpg" onclick="openModal();currentSlide(10)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/restauraçaoponte.jpg" onclick="openModal();currentSlide(11)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/Mansão janshung.jpg" onclick="openModal();currentSlide(12)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/condominiodepredio.jpg" onclick="openModal();currentSlide(13)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/restauraçaodepatrimonio.jpg"
+                        onclick="openModal();currentSlide(14)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/condominio5.jpg" onclick="openModal();currentSlide(15)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="imgpart1" src="/imagens/conjuntolu.jpg" onclick="openModal();currentSlide(16)"
+                        class="hover-shadow">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- The Modal/Lightbox -->
+
+    <div id="minhaModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-container">
+
+            <div class="primeiro-Slides">
+                <div class="numero-texto">1 / 16</div>
+                <img class="img2" src="/imagens/biblioteca.jpg">
+            </div>
+
+            <div class="primeiro-Slides">
+                <div class="numero-texto">2 / 16</div>
+                <img class="img2" src="/imagens/centrocomercial2.jpg">
+            </div>
+
+            <div class="primeiro-Slides">
+                <div class="numero-texto">3 / 16</div>
+                <img class="img2" src="/imagens/edificiocomercial1.jpg">
+            </div>
+
+            <div class="primeiro-Slides">
+                <div class="numero-texto">4 / 16</div>
+                <img class="img2" src="/imagens/edifico2.jpg">
+            </div>
+
+            <div class="primeiro-Slides">
+                <div class="numero-texto">5 / 16</div>
+                <img class="img2" src="/imagens/Elevadores.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">6 / 16</div>
+                <img class="img2" src="/imagens/hotel.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">7 / 16</div>
+                <img class="img2" src="/imagens/isona.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">8 /16</div>
+                <img class="img2" src="/imagens/teatro.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">9 / 16</div>
+                <img class="img2" src="/imagens/condominiodecasas.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">10 / 16</div>
+                <img class="img2" src="/imagens/hotel1.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">11 / 16</div>
+                <img class="img2" src="/imagens/restauraçaoponte.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">12 / 16</div>
+                <img class="img2" src="/imagens/Mansão janshung.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">13 / 16</div>
+                <img class="img2" src="/imagens/condominiodepredio.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">14 / 16</div>
+                <img class="img2" src="/imagens/restauraçaodepatrimonio.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">15 / 16</div>
+                <img class="img2" src="/imagens/condominio5.jpg">
+            </div>
+            <div class="primeiro-Slides">
+                <div class="numero-texto">16 / 16</div>
+                <img class="img2" src="/imagens/conjuntolu.jpg">
+            </div>
+
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="principio-container">
+                <p id="principio"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="/imagens/biblioteca.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/imagens/centrocomercial2.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/imagens/edificiocomercial1.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/imagens/edifico2.jpg" onclick="currentSlide(4)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/imagens/Elevadores.jpg" onclick="currentSlide(5)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/hotel.jpg" onclick="currentSlide(6)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/isona.jpg" onclick="currentSlide(7)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/teatro.jpg" onclick="currentSlide(8)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/condominiodecasas.jpg" onclick="currentSlide(9)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/hotel1.jpg" onclick="currentSlide(10)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/restauraçaoponte.jpg" onclick="currentSlide(11)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/Mansão janshung.jpg" onclick="currentSlide(12)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/condominiodepredio.jpg" onclick="currentSlide(13)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/restauraçaodepatrimonio.jpg" onclick="currentSlide(14)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/condominio5.jpg" onclick="currentSlide(15)" alt="Lights">
+            </div>
+            <div class="column">
+                <img class="demo" src="/imagens/conjuntolu.jpg" onclick="currentSlide(16)" alt="Lights">
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!--    Formulário -->
+
+    <div>
+        <h2 class="titulo2">Contato<a name="Contato"></a>
+            <hr class="hrtitulo">
+        </h2>
+    </div>
+
+    <div class="formulario">
+
+        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+            <input type="text" name="subject" placeholder="Assunto" />
+            <input type="text" name="extra_nome" placeholder="Nome" />
+            <input type="text" name="reply_to" placeholder="Seu email" />
+            <textarea name="text" placeholder="Mensagem"></textarea>
+            <input type="hidden" name="access_token" value="f5b4s3art8mmiyjdq6bg5x6n" />
+            <input type="hidden" name="success_url" value="https://www.google.com" />
+            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+            <input id="submit_form" type="submit" value="Enviar" />
+
+        </form>
+
+
+    </div>
+
+    <!--    Footer -->
+
+    <footer id="footer">
+
+        <div class="container-footer">
+
+            <div class="coluna">
+                <h4 class="footer-titulo">Siga-nos</h4>
+                <a href="http://www.facebook.com"><img class="imgfooter" src="imagens/facebook.png"
+                        alt="facebook-icon"></a>
+                <a href="http://www.twitter.com"><img class="imgfooter" src="/imagens/twitter.png"
+                        alt="facebook-icon"></a>
+                <a href="http://www.instagram.com"><img class="imgfooter" src="/imagens/instagram.png"
+                        alt="facebook-icon"></a>
+            </div>
+
+            <div class="coluna">
+                <h4 class="footer-titulo">Contato</h4>
+                <p>
+                    Av. Paulista, 500<br>
+                    São Paulo/SP<br>
+                    T. 2245-0977<br>
+                    contato@wedesign.com.br
+                </p>
+            </div>
+
+            <div class="coluna">
+                <h4 class="footer-titulo">Horários</h4>
+                <p>
+                    Seg-Sex: 11h30 - 24h00<br>
+                    Sábado 11h30 - 02h00<br>
+                    Domingo 11h30 - 18h</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright small-12 columns">
+
+            <span id="current_year"></span> &copy; Todos os direitos reservados
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
